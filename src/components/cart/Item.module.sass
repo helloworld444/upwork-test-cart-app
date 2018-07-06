@@ -1,0 +1,85 @@
+.flex
+  display: flex
+
+.alignCenter
+  align-items: center
+
+.item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 20px 10px
+  border-bottom: 1px solid #f1f1f1
+  position: relative
+
+.imageWrapper
+  width: 70px
+  height: 70px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid #ededed
+  border-radius: 10px
+  -webkit-box-shadow: 0px 6px 5px 0px #ededed
+  -moz-box-shadow: 0px 6px 5px 0px #ededed
+  box-shadow: 0px 6px 5px 0px #ededed
+
+.image
+  width: 45px
+  height: 45px
+  border-radius: 10px
+
+.descr
+  padding-left: 25px
+  width: 250px
+
+.title
+  font-family: 'Open Sans'
+  font-weight: bold
+  font-size: 16px
+  margin-bottom: 15px
+
+.subtitle
+  font-family: 'Open Sans'
+  font-size: 14px
+  max-width: 200px
+
+.itemPrice
+  font-family: 'Open Sans'
+  font-weight: bold
+  font-size: 16px
+
+.wrapperPrice
+  width: 100px
+  text-align: right
+
+.deleteBtn
+  width: 18px
+  height: 18px
+  position: absolute
+  top: 15px
+  right: 15px
+  background: url("../../image/garbage.svg")
+  border: none
+  cursor: pointer
+
+.deleteBtn:active
+  outline: none
+
+@media screen and (max-width: 650px)
+  .item
+    flex-wrap: wrap
+  .itemInfo
+    width: 100%
+  .descr
+    width: auto
+  .subtitle
+    max-width: none
+  .priceQuantity
+    width: 100%
+    justify-content: flex-end
+    margin-top: 15px
+
+@media screen and (max-width: 400px)
+  .priceQuantity
+    justify-content: center

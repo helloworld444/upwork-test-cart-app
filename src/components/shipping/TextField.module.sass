@@ -1,0 +1,48 @@
+.inputWrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin-bottom: 15px
+  min-height: 49px
+
+.inputText
+  font-size: 18px
+  font-weight: bold
+  font-family: 'Open Sans'
+  line-height: 30px
+
+.input
+  width: 270px
+  height: 30px
+  border: 1px solid lightgrey
+  border-radius: 5px
+  padding: 5px 10px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+.input_red
+  border: 1px solid red
+
+.input_red:focus
+  border: 1px solid red !important
+
+.input:focus, .input:active
+  border-color: green
+  border-radius: 5px
+  outline: none
+
+.inputError
+  max-width: 270px
+  color: red
+  font-size: 14px
+  margin: 0
+  margin-top: 5px
+  font-family: 'Open Sans'
+
+
+@media screen and (max-width: 470px)
+  .inputWrapper
+    flex-wrap: wrap
+  .inputText
+    width: 100%
